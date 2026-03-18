@@ -5082,7 +5082,7 @@ macros {
         #define WORLD_USE_COMPOSE_FOR_world_e_grave_lower
         COMPOSE_SEQ_WINDOWS(&kp KP_N0 &kp KP_N2 &kp KP_N3 &kp KP_N2)
       #else
-        COMPOSE_SEQ_WINDOWS(&kp KP_N0 &kp KP_N2 &kp KP_N3 &kp KP_N2)
+        UNICODE_SEQ_WINDOWS(&kp _N0 &kp _NE &kp _N8)
       #endif
     #endif
   )
@@ -5118,7 +5118,7 @@ macros {
         #define WORLD_USE_COMPOSE_FOR_world_e_grave_upper
         COMPOSE_SEQ_WINDOWS(&kp KP_N0 &kp KP_N2 &kp KP_N0 &kp KP_N0)
       #else
-        COMPOSE_SEQ_WINDOWS(&kp KP_N0 &kp KP_N2 &kp KP_N0 &kp KP_N0)
+        UNICODE_SEQ_WINDOWS(&kp _N0 &kp _NC &kp _N8)
       #endif
     #endif
   )
@@ -5550,7 +5550,7 @@ macros {
         #define WORLD_USE_COMPOSE_FOR_world_a_grave_lower
         COMPOSE_SEQ_WINDOWS(&kp KP_N0 &kp KP_N2 &kp KP_N2 &kp KP_N4)
       #else
-        COMPOSE_SEQ_WINDOWS(&kp KP_N0 &kp KP_N2 &kp KP_N2 &kp KP_N4)
+        UNICODE_SEQ_WINDOWS(&kp _N0 &kp _NE &kp _N0)
       #endif
     #endif
   )
@@ -5586,7 +5586,7 @@ macros {
         #define WORLD_USE_COMPOSE_FOR_world_a_grave_upper
         COMPOSE_SEQ_WINDOWS(&kp KP_N0 &kp KP_N1 &kp KP_N9 &kp KP_N2)
       #else
-        COMPOSE_SEQ_WINDOWS(&kp KP_N0 &kp KP_N1 &kp KP_N9 &kp KP_N2)
+        UNICODE_SEQ_WINDOWS(&kp _N0 &kp _NC &kp _N0)
       #endif
     #endif
   )
@@ -6174,7 +6174,7 @@ macros {
         #define WORLD_USE_COMPOSE_FOR_world_o_grave_lower
         COMPOSE_SEQ_WINDOWS(&kp KP_N0 &kp KP_N2 &kp KP_N4 &kp KP_N2)
       #else
-        COMPOSE_SEQ_WINDOWS(&kp KP_N0 &kp KP_N2 &kp KP_N4 &kp KP_N2)
+        UNICODE_SEQ_WINDOWS(&kp _N0 &kp _NF &kp _N2)
       #endif
     #endif
   )
@@ -6210,7 +6210,7 @@ macros {
         #define WORLD_USE_COMPOSE_FOR_world_o_grave_upper
         COMPOSE_SEQ_WINDOWS(&kp KP_N0 &kp KP_N2 &kp KP_N1 &kp KP_N0)
       #else
-        COMPOSE_SEQ_WINDOWS(&kp KP_N0 &kp KP_N2 &kp KP_N1 &kp KP_N0)
+        UNICODE_SEQ_WINDOWS(&kp _N0 &kp _ND &kp _N2)
       #endif
     #endif
   )
@@ -8159,7 +8159,7 @@ macros {
   world_e_LCTL: world_e_LCTL {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
-    bindings = <&world_e_diaeresis>, <&world_e_RCTL>;
+    bindings = <&world_e_grave>, <&world_e_RCTL>;
     mods = <(MOD_RCTL|MOD_RSFT)>;
   };
   world_e_RCTL: world_e_RCTL {
@@ -8171,7 +8171,7 @@ macros {
   world_e_RSFT: world_e_RSFT {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
-    bindings = <&world_e_grave>, <&world_e_LCTL_RSFT>;
+    bindings = <&world_e_diaeresis>, <&world_e_LCTL_RSFT>;
     mods = <(MOD_LCTL|MOD_RCTL)>;
   };
   world_e_LCTL_RSFT: world_e_LCTL_RSFT {
@@ -8201,7 +8201,7 @@ macros {
   world_a_LCTL: world_a_LCTL {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
-    bindings = <&world_a_diaeresis>, <&world_a_RCTL>;
+    bindings = <&world_a_grave>, <&world_a_RCTL>;
     mods = <(MOD_RCTL|MOD_RSFT)>;
   };
   world_a_RCTL: world_a_RCTL {
@@ -8213,7 +8213,7 @@ macros {
   world_a_RSFT: world_a_RSFT {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
-    bindings = <&world_a_grave>, <&world_a_LCTL_RSFT>;
+    bindings = <&world_a_diaeresis>, <&world_a_LCTL_RSFT>;
     mods = <(MOD_LCTL|MOD_RCTL)>;
   };
   world_a_LCTL_RSFT: world_a_LCTL_RSFT {
@@ -8249,7 +8249,7 @@ macros {
   world_o_LCTL: world_o_LCTL {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
-    bindings = <&world_o_diaeresis>, <&world_o_RCTL>;
+    bindings = <&world_o_grave>, <&world_o_RCTL>;
     mods = <(MOD_RCTL|MOD_RSFT)>;
   };
   world_o_RCTL: world_o_RCTL {
@@ -8261,7 +8261,7 @@ macros {
   world_o_RSFT: world_o_RSFT {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
-    bindings = <&world_o_grave>, <&world_o_LCTL_RSFT>;
+    bindings = <&world_o_diaeresis>, <&world_o_LCTL_RSFT>;
     mods = <(MOD_LCTL|MOD_RCTL)>;
   };
   world_o_LCTL_RSFT: world_o_LCTL_RSFT {
