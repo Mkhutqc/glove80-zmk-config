@@ -882,7 +882,7 @@
 /* Custom Defined Behaviors */
 / {
 // NOTE: Use the many #define settings below to customize this keymap!
-#define OPERATING_SYSTEM 'L' // choose 'L'inux, 'M'acOS, or 'W'indows
+#define OPERATING_SYSTEM 'W' // choose 'L'inux, 'M'acOS, or 'W'indows
 #define DIFFICULTY_LEVEL  4  // 0:custom, 1:easy -> 5:hard (see below)
 #define ENABLE_MOUSE_KEYS    // requires HID_POINTING override to "y"
 #define ENFORCE_BILATERAL    // cancels single-handed home row mod+tap
@@ -10868,7 +10868,7 @@ macros {
                 &none                     &none                 &none                &none                &none                                                                                           &none      &none      &none      &none   &none
                 &none                     &none                 &none                &none                &none                 &none                                                   &none             &none      &none      &none      &none   &none
                 &none                     &none         &world_y_base        &world_o_base        &world_u_base     &world_sign_angle                                                   &none             &none   &sk LALT   &sk RALT      &none   &none
-                &none    &world_consonants_base         &world_i_base        &world_a_base        &world_e_base      &world_sign_dash                                                   &none         &sk LSHFT  &sk LCTRL  &sk RCTRL  &sk RSHFT   &none
+                &none    &world_consonants_base         &world_i_base        &world_a_base        &world_e_base      &world_sign_dash                                                   &none         &sk LSHFT  &sk LCTRL  &sk RCTRL  &kp RSHFT   &none
  &world_currency_base   &world_quotes_left_base  &world_sign_landmark  &world_sign_ordinal  &world_sign_exclaim  &world_sign_question   &none   &none   &none   &none   &none   &none   &none             &none      &none      &none      &none   &none
      &world_sign_base  &world_quotes_right_base                 &none                &none                &none                         &none   &none   &none   &none   &none   &none          &tog LAYER_World      &none      &none      &none   &none
             >;
